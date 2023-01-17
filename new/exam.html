@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Exam</title>
+<script language="javascript">function exam(form)
+{
+var i=0;
+if(form.one[2].checked)i=i+1;
+if(form.three[0].checked)i=i+1;
+if(form.four[0].checked)i=i+1;
+if(form.five[1].checked)i=i+1;
+window.alert("Thank you for taking this online exam your score is;"+i);
+}
+</script>
+</head>
+<body bg color=silver>
+<form onsubmit="exam(this)">
+<center><h1><blink>WELCOME TO ONLINE EXAM FORM</blink></h1></center>
+<p>
+<h1>1,which is platform indipendant language</h1>
+<input type="radio" name="one" values="C++">
+<label>C++</label>
+<input type="radio" name="one" values="C">
+<label>C</label>
+<input type="radio" name="one" values="JAVA">
+<label>JAVA</label>
+<input type="radio" name="one" values="BASIC">
+<label>BASIC</label>
+</p>
+<h1>2,which is class of all class in java</h1>
+<input type="radio" name="three" values="Object">
+<label>object</label>
+<input type="radio" name="three" values="Math">
+<label>Math</label>
+<input type="radio" name="three" values="System">
+<label>System</label>
+<input type="radio" name="three" values="Graphic">
+<label>Graphic</label>
+</p>
+<p>
+<h1>3,Frame package is in which package</h1>
+<input type="radio" name="four" values="AWT">
+<label>AWT</label>
+<input type="radio" name="four" values="Applet">
+<label>Applet</label>
+<input type="radio" name="four" values="lang">
+<label>lang</label>
+<input type="radio" name="four" values="Swing">
+<label>Swing</label>
+</p>
+<p> 
+<h1>4,Java does not support</h1>
+<input type="radio" name="five" values="inheritance">
+<label>Inheritance</label>
+<input type="radio" name="five" values="multiple inheritance">
+<label>Multiple Inheritance</label>
+<input type="radio" name="five" values="polymorphism">
+<label>Polymorphism</label>
+<input type="radio" name="five" values="encryption">
+<label>Encryption</label>
+</p>
+<p> 
+<center>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</p>
+</body>
+</html>
